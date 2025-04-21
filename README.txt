@@ -1,5 +1,7 @@
 JUPITER NOTEBOOK FOR ACTION/CHARACTER AND MALE/FEMALE DIALOGUE CLASSIFICATION
 
+A PDF report details the Aim, matériels, méthodes and result of this project.
+
 Change these variables to modify the datasets used : 
 
   usedPaths = [hZDPath] #Paths to the datasets used
@@ -7,38 +9,12 @@ Change these variables to modify the datasets used :
   wholeDataset = True #Whether to use the whole dataset or 20% of it to reduce computation time
 
 Change this one if you change the classifier : 
-  ClassifierID = 'MLPClassifier' #To save trained models with the classifier name
+  ClassifierID = 'MLPClassifier' #To save trained models and other ouputs with the classifier name
 
---------------------------------------------------------
-Build dataset from Video Game Dialogue Corpus : 
+output/ folder container the result for previous experiments.
 
-create virtual env :
-python3 -m venv nlp_env
+Trained models were removed because too heavy for github (>100MB)
+You will have to train your own models to use the additionnel part of the notebook (manual testing on another dataset than the one the model is trained on)
 
-activate it : 
-source ./nlp_env/bin/activate
-
-install python packages :
-py -m pip install bs4
-py -m pip install html5lib
-py -m pip install cssutils
-py -m pip install lxml
-py -m pip install numpy
-py -m pip install xlrd==1.2.0
-py -m pip install hjson
-py -m pip install xlsxwriter
-py -m pip install pyyaml
-py -m pip install textatistic
-py -m pip install igraph
-
-pip install bs4
-pip install html5lib
-pip install cssutils
-pip install lxml
-pip install numpy
-pip install xlrd==1.2.0
-pip install hjson
-pip install xlsxwriter
-pip install pyyaml
-pip install textatistic
-pip install igraph
+Dataset built from the Video Game Dialogue Corpus : 
+https://github.com/seannyD/VideoGameDialogueCorpusPublic
